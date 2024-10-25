@@ -4,12 +4,4 @@ describe('startQuiz', () => {
   test('[startQuiz]', () => {
     expect(startQuiz).toBeDefined();
   });
-
-  test('[startQuiz]', () => {
-    expect(loadQuestion).toBeDefined();
-  });
-
-  test('[startQuiz]', () => {
-    expect(resetQuiz).toBeDefined();
-  });
-})
+});

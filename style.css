@@ -4,14 +4,25 @@
     box-sizing: border-box;
 }
 
+.home {
+    margin: 25% 0px 0px 0px;
+}
+
 body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f2f5;
+    background-image: linear-gradient(125deg, #6b73ff, #00a6ff);
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    max-width: 600px;
+    width: 500px;
+    height: 500px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -59,6 +70,10 @@ button:hover {
 
 .option-btn:hover {
     background-color: #e2e6ea;
+}
+
+#quiz-container {
+    margin: 25% 0px 0px 0px;
 }
 
 .hidden {
