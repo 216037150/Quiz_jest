@@ -3,5 +3,10 @@ import { startQuiz, checkAnswer, endQuiz, displayHighScores, resetQuiz, loadQues
 describe('startQuiz', () => {
   test('[startQuiz]', () => {
     expect(startQuiz).toBeDefined();
+    expect(typeof startQuiz).toBe('function');
+  });
+
+  test('[startQuiz] must be a function', () => {
+    expect(typeof startQuiz).toBe('function');
   });
 });
