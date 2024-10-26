@@ -64,7 +64,7 @@ function startQuiz() {
   const quizContainer = document.getElementById('quiz-container');
   const playerName = document.getElementById('player-name').value.trim();
   
-  if (!playerName) {
+  if (!playerName || playerName.length === 0 || playerName.match(/^\s+$/)) {
       alert('Please enter your name to start');
       return;
   }

@@ -11,11 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0"
   },
   "jest": {
     "testEnvironment": "jsdom",
     "transform": {}
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
