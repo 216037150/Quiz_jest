@@ -111,14 +111,16 @@ describe('startQuiz', () => {
     });
   });
 
+
   describe('startQuiz Functionality', () => {
-    test('startQuiz hides name-prompt and displays quiz-container', () => {
+    it('should hide the name-prompt and display the quiz-container', () => {
       startQuiz();
+  
       expect(document.getElementById('name-prompt').classList.contains('hidden')).toBe(true);
       expect(document.getElementById('quiz-container').classList.contains('hidden')).toBe(false);
     });
   });
-
+  
 
   // testing functionality of other functions
   describe('checkAnswer Functionality', () => {
