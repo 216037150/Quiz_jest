@@ -1,5 +1,5 @@
 // Quiz Questions
-const questions = [
+const  questions = [
   {
       question: "What is the capital of France?",
       options: ["London", "Berlin", "Paris", "Madrid"],
@@ -63,18 +63,36 @@ function startQuiz() {
   const namePrompt = document.getElementById('name-prompt');
   const quizContainer = document.getElementById('quiz-container');
   const playerName = document.getElementById('player-name').value.trim();
+
+ 
   
   if (!playerName || playerName.length === 0 || playerName.match(/^\s+$/)) {
       alert('Please enter your name to start');
       return;
   }
+
+
   
   Utils.saveName(playerName);
   namePrompt.classList.add('hidden');
   quizContainer.classList.remove('hidden');
   loadQuestion();
+  HelloPlusName();
+}
+function HelloPlusName() {
+  const quizContainer = document.getElementById('quiz-container');
+  const myName = document.getElementById('myName');
+  const playerName = Utils.getCurrentPlayer();
+
+  myName.textContent = `Hello, ${playerName}!`;
+  myName.style.marginBottom = '50px';
+  myName.style.marginTop = '-5px';
+  myName.style.color = 'Red'; 
+  quizContainer.insertBefore(myName, quizContainer.firstChild);
 }
 
+
+ 
 function loadQuestion() {
   if (currentQuestion >= questions.length) {
       endQuiz();
@@ -162,5 +180,7 @@ export {
   endQuiz,
   displayHighScores,
   resetQuiz,
-  init
+  init,
+  HelloPlusName, 
+  questions
 };
