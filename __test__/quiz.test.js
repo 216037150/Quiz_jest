@@ -113,7 +113,7 @@ describe('startQuiz', () => {
 
 
   describe('startQuiz Functionality', () => {
-    it('should hide the name-prompt and display the quiz-container', () => {
+    test('should hide the name-prompt and display the quiz-container', () => {
       startQuiz();
   
       expect(document.getElementById('name-prompt').classList.contains('hidden')).toBe(true);
