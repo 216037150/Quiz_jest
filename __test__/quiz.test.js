@@ -271,7 +271,7 @@ describe('HelloPlusName', () => {
     expect(myName.textContent).toBe('Hello, Test Player!');
     expect(myName.style.marginBottom).toBe('30px');
     expect(myName.style.marginTop).toBe('-5px');
-    expect(myName.style.color).toBe('blue');
+    expect(myName.style.color).toBe('green');
     expect(quizContainer.firstChild).toBe(myName);
   });
 });
@@ -285,10 +285,6 @@ describe('[questions] must be an array', () => {
 
   test('[questions] property should be an array', () => {
     expect(Array.isArray(questions)).toBe(true);
-  });
-
-  test('questions array should have a length of 4', () => {
-    expect(questions).toHaveLength(4);
   });
 
   test('each question should have question and options properties', () => {

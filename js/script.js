@@ -19,8 +19,53 @@ const  questions = [
       question: "Who painted the Mona Lisa?",
       options: ["Van Gogh", "Da Vinci", "Picasso", "Rembrandt"],
       correct: 1
-  }
-];
+  },
+  {
+        question: "Which language is primarily used for web development?",
+        options: [ "Python", "JavaScript", "C++", "Java" ],
+        correctAnswer: 1
+  },
+    {
+        question: "What does HTML stand for?",
+        options: [ "Hyper Text Markup Language", "Hot Mail", "How To Make Lasagna", "High Text Machine Language" ],
+        correctAnswer: 0
+    },
+    {
+        question: "What year was JavaScript created?",
+        options: ["1995", "2000", "1989", "1998" ],
+        correctAnswer: 0
+    },
+    {
+        question: "Which company developed the Java programming language?",
+        options: ["Microsoft", "Apple", "Sun Microsystems", "IBM" ],
+        correctAnswer: 2
+    },
+    {
+        question: "CSS stands for:",
+        options: [ "Cascading Style Sheets", "Creative Style Sheets", "Computer Style Sheets",  "Colorful Style Sheets" ],
+        correctAnswer: 0
+    },
+    {
+        question: "What is the correct way to link a CSS file in HTML?",
+        options: [ "<link src='style.css'>", "<stylesheet>style.css</stylesheet>", "<link rel='stylesheet' href='style.css'>", "<css href='style.css'>" ],
+        correctAnswer: 2
+    },
+    {
+        question: "Which HTML tag is used to define an internal style sheet?",
+        options: [ "<style>",  "<css>", "<script>",  "<design>" ],
+        correctAnswer: 0
+    },
+    {
+        question: "What does SQL stand for?",
+        options: [ "Structured Query Language", "Stylish Question Language", "Statement Query Language", "Strong Query Language" ],
+        correctAnswer: 0
+    },
+    {
+        question: "Which tag is used to create a line break in HTML?",
+        options: [ "<lb>", "<br>", "<break>", "<newline>" ],
+        correctAnswer: 1
+    }
+  ];
 
 // Utility functions for managing scores and player data
 const Utils = {
@@ -137,6 +182,7 @@ function loadQuestion() {
       optionsContainer.appendChild(button);
   }
 }
+
 
 function checkAnswer(selectedOption) {
   const correct = questions[currentQuestion].correct;
