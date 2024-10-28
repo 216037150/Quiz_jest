@@ -112,7 +112,7 @@ function HelloPlusName() {
   myName.textContent = `Hello, ${playerName}!`;
   myName.style.marginBottom = '30px';
   myName.style.marginTop = '-5px';
-  myName.style.color = 'blue'; 
+  myName.style.color = 'green'; 
   quizContainer.insertBefore(myName, quizContainer.firstChild);
 }
 

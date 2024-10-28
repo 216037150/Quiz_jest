@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1730102579296" clover="3.2.0">
-  <project timestamp="1730102579296" name="All files">
+<coverage generated="1730103676506" clover="3.2.0">
+  <project timestamp="1730103676506" name="All files">
     <metrics statements="97" coveredstatements="86" conditionals="17" coveredconditionals="13" methods="17" coveredmethods="13" elements="131" coveredelements="112" complexity="0" loc="97" ncloc="97" packages="1" files="1" classes="1"/>
-    <file name="script.js" path="/Users/damacm195/Desktop/Programming/Quiz/Quiz_jest/js/script.js">
+    <file name="script.js" path="/Users/damacm1128/Desktop/Quiz/Quiz_jest/js/script.js">
       <metrics statements="97" coveredstatements="86" conditionals="17" coveredconditionals="13" methods="17" coveredmethods="13"/>
       <line num="2" count="1" type="stmt"/>
       <line num="26" count="1" type="stmt"/>
