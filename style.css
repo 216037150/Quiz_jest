@@ -21,8 +21,8 @@ body {
 }
 
 .container {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 650px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -74,7 +74,6 @@ button:hover {
 
 #quiz-container {
     margin: 25% 0px 0px 0px;
-    height: 300px;
 }
 
 .hidden {
@@ -99,3 +98,14 @@ button:hover {
     color: #333;
 }
 
+#next-btn {
+    background-color: darkgreen;
+}
+
+#next-btn:hover {
+    background-color: green;
+}
+
+#myName {
+
+}

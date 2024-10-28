@@ -5,7 +5,7 @@ import {
        checkAnswer, endQuiz,
        displayHighScores, resetQuiz, 
        loadQuestion, init, HelloPlusName,
-       questions
+       questions, nextButton
       } 
       
       from '../js/script.js';
@@ -18,6 +18,7 @@ describe('Quiz App Basic Functionality', () => {
       <div id="quiz-container" class="hidden"><h2 id="question"></h2><div id="options"></div></div>
       <div id="result-container" class="hidden"><p id="result-text"></p><div id="scores-list"></div></div>
       <p id="myName"></p> 
+       <button id="next-btn" class="hidden">Next</button>
 
     `;
   });
@@ -86,6 +87,7 @@ describe('startQuiz', () => {
 
   });
 
+
   describe('checkAnswer', () => {
     test('[checkAnswer]', () => {
       expect(checkAnswer).toBeDefined();
@@ -95,6 +97,30 @@ describe('startQuiz', () => {
       expect(typeof checkAnswer).toBe('function');
     });
   })
+
+  // Next Button functionality
+  describe('nextButton', () => {
+    test('nextButton should be defined and a function', () => {
+      expect(nextButton).toBeDefined();
+      expect(typeof nextButton).toBe("function");
+    });
+
+    test('next button should load the next question when clicked', () => {
+      const nextButton = document.getElementById('next-btn');
+      loadQuestion();
+      expect(document.getElementById('question').textContent).toBe(questions[0].question);
+
+    });
+
+    test('should end the quiz if it is the last question', () => {
+      document.getElementById('next-btn').addEventListener('click', () => {
+        currentQuestion++;
+        if (currentQuestion >= questions.length) {
+            endQuiz();
+        }
+    });
+  });
+  });
 
   describe('endQuiz', () => {
     test('[endQuiz]', () => {
@@ -346,6 +372,8 @@ describe('loadQuestion', () => {
     }
   });
 });
+
+
 })
 
 

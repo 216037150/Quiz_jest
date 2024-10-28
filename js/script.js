@@ -71,11 +71,23 @@ function startQuiz() {
       quizContainer.classList.remove('hidden');
       loadQuestion();
       HelloPlusName();
+      nextButton()
   } catch (error) {
       console.error(error.message);
   }
 }
 
+function nextButton() {
+  document.getElementById('next-btn').addEventListener('click', () => {
+      currentQuestion++;
+      if (currentQuestion >= questions.length) {
+          endQuiz();
+      } else {
+          loadQuestion();
+          document.getElementById('next-btn').classList.add('hidden');
+      }
+  });
+}
 
 function validatePlayerName(playerName) {
   if (!playerName || playerName.length === 0 || playerName.match(/^\s+$/))
@@ -90,6 +102,7 @@ function validatePlayerName(playerName) {
       throw new Error('Invalid input: Please do not use special characters.');
   }
 }
+
 
 function HelloPlusName() {
   const quizContainer = document.getElementById('quiz-container');
@@ -130,8 +143,7 @@ function checkAnswer(selectedOption) {
   if (selectedOption === correct) {
       score++;
   }
-  currentQuestion++;
-  loadQuestion();
+  document.getElementById('next-btn').classList.remove('hidden');
 }
 
 function endQuiz() {
@@ -195,5 +207,6 @@ export {
   resetQuiz,
   init,
   HelloPlusName, 
-  questions
+  questions,
+  nextButton
 };
