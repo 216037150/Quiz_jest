@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1730016901179" clover="3.2.0">
-  <project timestamp="1730016901180" name="All files">
+<coverage generated="1730089543010" clover="3.2.0">
+  <project timestamp="1730089543010" name="All files">
     <metrics statements="82" coveredstatements="75" conditionals="11" coveredconditionals="8" methods="14" coveredmethods="11" elements="107" coveredelements="94" complexity="0" loc="82" ncloc="82" packages="1" files="1" classes="1"/>
     <file name="script.js" path="/home/gumza/Quiz_jest/js/script.js">
       <metrics statements="82" coveredstatements="75" conditionals="11" coveredconditionals="8" methods="14" coveredmethods="11"/>
@@ -79,13 +79,13 @@
       <line num="158" count="1" type="stmt"/>
       <line num="159" count="1" type="stmt"/>
       <line num="160" count="1" type="stmt"/>
-      <line num="162" count="1" type="stmt"/>
       <line num="163" count="1" type="stmt"/>
       <line num="164" count="1" type="stmt"/>
       <line num="165" count="1" type="stmt"/>
-      <line num="170" count="0" type="stmt"/>
+      <line num="166" count="1" type="stmt"/>
       <line num="171" count="0" type="stmt"/>
-      <line num="174" count="1" type="stmt"/>
+      <line num="172" count="0" type="stmt"/>
+      <line num="175" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

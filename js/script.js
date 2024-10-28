@@ -85,9 +85,9 @@ function HelloPlusName() {
   const playerName = Utils.getCurrentPlayer();
 
   myName.textContent = `Hello, ${playerName}!`;
-  myName.style.marginBottom = '50px';
+  myName.style.marginBottom = '30px';
   myName.style.marginTop = '-5px';
-  myName.style.color = 'Red'; 
+  myName.style.color = 'blue'; 
   quizContainer.insertBefore(myName, quizContainer.firstChild);
 }
 
@@ -159,6 +159,7 @@ function resetQuiz() {
   const quizContainer = document.getElementById('quiz-container');
   const resultContainer = document.getElementById('result-container');
   
+
   quizContainer.classList.add('hidden');
   resultContainer.classList.add('hidden');
   namePrompt.classList.remove('hidden');

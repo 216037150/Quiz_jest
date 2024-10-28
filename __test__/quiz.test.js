@@ -190,9 +190,9 @@ describe('HelloPlusName', () => {
     const quizContainer = document.getElementById('quiz-container');
 
     expect(myName.textContent).toBe('Hello, Test Player!');
-    expect(myName.style.marginBottom).toBe('50px');
+    expect(myName.style.marginBottom).toBe('30px');
     expect(myName.style.marginTop).toBe('-5px');
-    expect(myName.style.color).toBe('Red');
+    expect(myName.style.color).toBe('blue');
     expect(quizContainer.firstChild).toBe(myName);
   });
 });
@@ -293,5 +293,10 @@ describe('loadQuestion', () => {
     }
   });
 });
+})
 
-});
+
+
+
+
+

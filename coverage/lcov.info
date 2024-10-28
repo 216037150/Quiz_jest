@@ -13,7 +13,7 @@ FN:116,checkAnswer
 FN:125,endQuiz
 FN:141,displayHighScores
 FN:155,resetQuiz
-FN:169,init
+FN:170,init
 FNF:14
 FNH:11
 FNDA:1,(anonymous_0)
@@ -105,13 +105,13 @@ DA:157,1
 DA:158,1
 DA:159,1
 DA:160,1
-DA:162,1
 DA:163,1
 DA:164,1
 DA:165,1
-DA:170,0
+DA:166,1
 DA:171,0
-DA:174,1
+DA:172,0
+DA:175,1
 LF:82
 LH:75
 BRDA:45,0,0,2
